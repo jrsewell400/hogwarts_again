@@ -7,4 +7,8 @@ class Student <ApplicationRecord
   def count 
     professors.count
   end
+
+  def self.sort
+    order(name: :asc)
+  end
 end

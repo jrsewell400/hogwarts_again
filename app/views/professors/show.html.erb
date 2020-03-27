@@ -1,7 +1,7 @@
 <h1><%= @professor.name.upcase %>'S SHOW PAGE
 
 List of <%= @professor.name %>'s students:
-<%= @professor.students.each do |student| %>
+<% @professor.students.each do |student| %>
   <%= student.name %>
 <% end %></br></br>
 

@@ -44,6 +44,14 @@ RSpec.describe "As a visitor,", type: :feature do
       visit "/professors/#{snape.id}"
       
       expect(page).to have_content(20)
+
+      visit "/professors/#{hagarid.id}"
+
+      expect(page).to have_content(15)
+
+      visit "/professors/#{lupin.id}"
+
+      expect(page).to have_content(15)
     end
   end 
 end 
