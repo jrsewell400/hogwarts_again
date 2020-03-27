@@ -21,21 +21,21 @@ RSpec.describe "As a visitor,", type: :feature do
       visit "/students"
 
       within "#student-#{harry.id}" do 
-        expect(page).to have_content(snape.name)
-        expect(page).to have_content(snape.age)
-        expect(page).to have_content(snape.specialty)
+        expect(page).to have_content(3)
+        expect(page).to have_content("Potions")
+        expect(page).to have_content("Care of Magical Creatures")
+        expect(page).to have_content("Defense Against The Dark Arts")
       end
 
       within "#student-#{malfoy.id}" do 
-        expect(page).to have_content(hagarid.name)
-        expect(page).to have_content(hagarid.age)
-        expect(page).to have_content(hagarid.specialty)
+        expect(page).to have_content(2)
+        expect(page).to have_content("Care of Magical Creatures")
+        expect(page).to have_content("Defense Against The Dark Arts")
       end
 
       within "#student-#{longbottom.id}" do 
-        expect(page).to have_content(lupin.name)
-        expect(page).to have_content(lupin.age)
-        expect(page).to have_content(lupin.specialty)
+        expect(page).to have_content(1)
+        expect(page).to have_content("Potions")
       end
     end 
   end 

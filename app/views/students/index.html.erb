@@ -1,23 +1,13 @@
 <h1>STUDENTS INDEX PAGE</h1>
 
 <%= @students.each do |student| %>
-<% binding.pry %>
   <section id="student-<%= student.id %>">
-    Student's courses:
-      <%= student.professors.specialty %>
-
     Student's Number of Professors:
       <%= student.count %>
-  </section>
-<% end %>
 
-<%= @students.professors.each do |professor| %>
-<% binding.pry %>
-  <section id="student-<%= student.id %>">
     Student's courses:
-      <%= student.professors.specialty %>
-
-    Student's Number of Professors:
-      <%= student.count %>
+      <% student.professors.each do |professor| %>
+        <%= professor.specialty %>
+      <% end %>
   </section>
 <% end %>
