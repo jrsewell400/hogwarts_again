@@ -10,7 +10,7 @@
 When you run rspec, you should have 12 failing tests to start.  
 
 <!-- ```
-User Story 1 of 4
+User Story 1 of 4 - DONE
 As a visitor, 
 When I visit '/professors',
 I see a list of professors with the following information:
