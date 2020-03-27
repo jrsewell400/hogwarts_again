@@ -14,7 +14,7 @@
       <img src="./assets/0.12.2/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-27T12:41:40-06:00">2020-03-27T12:41:40-06:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2020-03-27T13:17:59-06:00">2020-03-27T13:17:59-06:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -30,7 +30,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.15
+         1.17
        </span>
     </span> hits/line
     )
@@ -43,8 +43,8 @@
   </div>
 
   <div class="t-line-summary">
-    <b>245</b> relevant lines,
-    <span class="green"><b>245</b> lines covered</span> and
+    <b>265</b> relevant lines,
+    <span class="green"><b>265</b> lines covered</span> and
     <span class="red"><b>0</b> lines missed. </span>
     (<span class="green">
   100.0%
@@ -150,11 +150,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#d53c2b74b91f868923b3398b8ce0294c7ece47d9" class="src_link" title="app/models/student.rb">app/models/student.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">14</td>
-            <td class="cell--number">8</td>
-            <td class="cell--number">8</td>
+            <td class="cell--number">18</td>
+            <td class="cell--number">10</td>
+            <td class="cell--number">10</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">2.25</td>
+            <td class="cell--number">2.80</td>
             
           </tr>
         
@@ -348,11 +348,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#3ac74d4bd2b673d3f1102e19859a5aa8cb010a62" class="src_link" title="spec/models/student_spec.rb">spec/models/student_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
+            <td class="cell--number">82</td>
             <td class="cell--number">59</td>
-            <td class="cell--number">41</td>
-            <td class="cell--number">41</td>
+            <td class="cell--number">59</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.12</td>
+            <td class="cell--number">1.08</td>
             
           </tr>
         
@@ -1044,8 +1044,8 @@
     
 
     <div class="t-line-summary">
-      <b>8</b> relevant lines.
-      <span class="green"><b>8</b> lines covered</span> and
+      <b>10</b> relevant lines.
+      <span class="green"><b>10</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -1201,6 +1201,50 @@
       
         <div>
           <li class="never" data-hits="" data-linenumber="14">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="15">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def sort_specialty </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="9" data-linenumber="16">
+            <span class="hits">9</span>
+            
+
+            
+
+            <code class="ruby">    professors.order(&#39;specialty ASC&#39;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="17">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="18">
             
             
 
@@ -5628,8 +5672,8 @@
     
 
     <div class="t-line-summary">
-      <b>41</b> relevant lines.
-      <span class="green"><b>41</b> lines covered</span> and
+      <b>59</b> relevant lines.
+      <span class="green"><b>59</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -6043,18 +6087,18 @@
 
             
 
-            <code class="ruby">  end</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="38">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">    it &quot;#sort_specialty&quot; do </code>
           </li>
         </div>
       
@@ -6065,7 +6109,7 @@
 
             
 
-            <code class="ruby">  describe &quot;class methods&quot; do </code>
+            <code class="ruby">      snape = Professor.create(name: &quot;Severus Snape&quot;, age: 45, specialty: &quot;Potions&quot;)</code>
           </li>
         </div>
       
@@ -6076,7 +6120,7 @@
 
             
 
-            <code class="ruby">    it &quot;.sort_students&quot; do </code>
+            <code class="ruby">      hagarid = Professor.create(name: &quot;Rubus Hagarid&quot;, age: 38 , specialty: &quot;Care of Magical Creatures&quot;)</code>
           </li>
         </div>
       
@@ -6087,18 +6131,18 @@
 
             
 
-            <code class="ruby">      snape = Professor.create(name: &quot;Severus Snape&quot;, age: 45, specialty: &quot;Potions&quot;)</code>
+            <code class="ruby">      lupin = Professor.create(name: &quot;Remus Lupin&quot;, age: 49 , specialty: &quot;Defense Against The Dark Arts&quot;)</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="42">
-            <span class="hits">1</span>
+          <li class="never" data-hits="" data-linenumber="42">
+            
             
 
             
 
-            <code class="ruby">      hagarid = Professor.create(name: &quot;Rubus Hagarid&quot;, age: 38 , specialty: &quot;Care of Magical Creatures&quot;)</code>
+            <code class="ruby"></code>
           </li>
         </div>
       
@@ -6109,18 +6153,18 @@
 
             
 
-            <code class="ruby">      lupin = Professor.create(name: &quot;Remus Lupin&quot;, age: 49 , specialty: &quot;Defense Against The Dark Arts&quot;)</code>
+            <code class="ruby">      harry = Student.create!(name: &quot;Harry Potter&quot; , age: 11 , house: &quot;Gryffindor&quot; )</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="44">
-            
-            
-
+          <li class="covered" data-hits="1" data-linenumber="44">
+            <span class="hits">1</span>
             
 
-            <code class="ruby"></code>
+            
+
+            <code class="ruby">      malfoy = Student.create!(name: &quot;Draco Malfoy&quot; , age: 12 , house: &quot;Slytherin&quot; )</code>
           </li>
         </div>
       
@@ -6131,34 +6175,12 @@
 
             
 
-            <code class="ruby">      harry = Student.create!(name: &quot;Harry Potter&quot; , age: 10 , house: &quot;Gryffindor&quot; )</code>
+            <code class="ruby">      longbottom = Student.create!(name: &quot;Neville Longbottom&quot; , age: 11 , house: &quot;Gryffindor&quot; )</code>
           </li>
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="46">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      malfoy = Student.create!(name: &quot;Draco Malfoy&quot; , age: 20 , house: &quot;Slytherin&quot; )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="47">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">      longbottom = Student.create!(name: &quot;Neville Longbottom&quot; , age: 30 , house: &quot;Gryffindor&quot; )</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="48">
+          <li class="never" data-hits="" data-linenumber="46">
             
             
 
@@ -6169,7 +6191,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="49">
+          <li class="covered" data-hits="1" data-linenumber="47">
             <span class="hits">1</span>
             
 
@@ -6180,7 +6202,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="50">
+          <li class="covered" data-hits="1" data-linenumber="48">
             <span class="hits">1</span>
             
 
@@ -6191,7 +6213,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="51">
+          <li class="covered" data-hits="1" data-linenumber="49">
             <span class="hits">1</span>
             
 
@@ -6202,7 +6224,7 @@
         </div>
       
         <div>
-          <li class="covered" data-hits="1" data-linenumber="52">
+          <li class="covered" data-hits="1" data-linenumber="50">
             <span class="hits">1</span>
             
 
@@ -6213,13 +6235,35 @@
         </div>
       
         <div>
+          <li class="covered" data-hits="1" data-linenumber="51">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: malfoy, professor: lupin)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="52">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: snape)</code>
+          </li>
+        </div>
+      
+        <div>
           <li class="covered" data-hits="1" data-linenumber="53">
             <span class="hits">1</span>
             
 
             
 
-            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: lupin)</code>
+            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: hagarid)</code>
           </li>
         </div>
       
@@ -6230,7 +6274,7 @@
 
             
 
-            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: snape)</code>
+            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: lupin)</code>
           </li>
         </div>
       
@@ -6252,12 +6296,34 @@
 
             
 
-            <code class="ruby">      Student.sort_students.to_a == [malfoy, harry, longbottom]</code>
+            <code class="ruby">      harry.sort_specialty.to_a == [hagarid.specialty, lupin.specialty, snape.specialty]</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="57">
+          <li class="covered" data-hits="1" data-linenumber="57">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      malfoy.sort_specialty.to_a == [hagarid.specialty, lupin.specialty]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="58">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      longbottom.sort_specialty.to_a == [hagarid.specialty, lupin.specialty, snape.specialty]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="59">
             
             
 
@@ -6268,7 +6334,7 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="58">
+          <li class="never" data-hits="" data-linenumber="60">
             
             
 
@@ -6279,7 +6345,238 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="59">
+          <li class="never" data-hits="" data-linenumber="61">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="62">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  describe &quot;class methods&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="63">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">    it &quot;.sort_students&quot; do </code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="64">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      snape = Professor.create(name: &quot;Severus Snape&quot;, age: 45, specialty: &quot;Potions&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="65">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      hagarid = Professor.create(name: &quot;Rubus Hagarid&quot;, age: 38 , specialty: &quot;Care of Magical Creatures&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="66">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      lupin = Professor.create(name: &quot;Remus Lupin&quot;, age: 49 , specialty: &quot;Defense Against The Dark Arts&quot;)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="67">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="68">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      harry = Student.create!(name: &quot;Harry Potter&quot; , age: 10 , house: &quot;Gryffindor&quot; )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="69">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      malfoy = Student.create!(name: &quot;Draco Malfoy&quot; , age: 20 , house: &quot;Slytherin&quot; )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="70">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      longbottom = Student.create!(name: &quot;Neville Longbottom&quot; , age: 30 , house: &quot;Gryffindor&quot; )</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="71">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="72">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: harry, professor: snape)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="73">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: harry, professor: hagarid)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="74">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: harry, professor: lupin)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="75">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: malfoy, professor: hagarid)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="76">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: lupin)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="77">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      ProfessorStudent.create!(student: longbottom, professor: snape)</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="78">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="79">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">      Student.sort_students.to_a == [malfoy, harry, longbottom]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="80">
+            
+            
+
+            
+
+            <code class="ruby">    end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="81">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="82">
             
             
 

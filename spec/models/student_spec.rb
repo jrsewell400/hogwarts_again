@@ -34,6 +34,29 @@ RSpec.describe Student, type: :model do
       expect(malfoy.count).to eq(2)
       expect(longbottom.count).to eq(1)
     end
+
+    it "#sort_specialty" do 
+      snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
+      hagarid = Professor.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
+      lupin = Professor.create(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
+
+      harry = Student.create!(name: "Harry Potter" , age: 11 , house: "Gryffindor" )
+      malfoy = Student.create!(name: "Draco Malfoy" , age: 12 , house: "Slytherin" )
+      longbottom = Student.create!(name: "Neville Longbottom" , age: 11 , house: "Gryffindor" )
+
+      ProfessorStudent.create!(student: harry, professor: snape)
+      ProfessorStudent.create!(student: harry, professor: hagarid)
+      ProfessorStudent.create!(student: harry, professor: lupin)
+      ProfessorStudent.create!(student: malfoy, professor: hagarid)
+      ProfessorStudent.create!(student: malfoy, professor: lupin)
+      ProfessorStudent.create!(student: longbottom, professor: snape)
+      ProfessorStudent.create!(student: longbottom, professor: hagarid)
+      ProfessorStudent.create!(student: longbottom, professor: lupin)
+
+      harry.sort_specialty.to_a == [hagarid.specialty, lupin.specialty, snape.specialty]
+      malfoy.sort_specialty.to_a == [hagarid.specialty, lupin.specialty]
+      longbottom.sort_specialty.to_a == [hagarid.specialty, lupin.specialty, snape.specialty]
+    end
   end
 
   describe "class methods" do 

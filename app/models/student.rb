@@ -11,4 +11,8 @@ class Student <ApplicationRecord
   def self.sort_students
     order('name ASC')
   end
+
+  def sort_specialty 
+    professors.order('specialty ASC')
+  end
 end

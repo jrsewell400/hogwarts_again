@@ -6,7 +6,7 @@
       <%= student.name %>'s Number of Professors: <%= student.count %></br></br>
 
       <%= student.name %>'s courses:</br>
-        <% student.professors.each do |professor| %>
+        <% student.sort_specialty.each do |professor| %>
           <%= professor.specialty %></br>
         <% end %></br>
     </section>
