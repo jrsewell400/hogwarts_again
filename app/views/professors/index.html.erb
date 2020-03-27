@@ -1,7 +1,7 @@
 <h1>PROFESSORS INDEX PAGE</h1>
 
-<% @professors.each do |professor| %>
-  <section id="professor-<%= professor.id %>">
+<% @professors.sort_professors.each do |professor| %>
+  <section id="professor-<%= professor.id %>" class="individual-professors">
     Name: <%= professor.name %></br>
     Age: <%= professor.age %></br>
     Specialty:  <%= professor.specialty %></br>

@@ -1,8 +1,8 @@
 <h1>STUDENTS INDEX PAGE</h1>
 
 <section class="students">
-  <% @students.sort.each do |student| %>
-    <section id="student-<%= student.id %>">
+  <% @students.sort_students.each do |student| %>
+    <section id="student-<%= student.id %>" class="individual-student">
       <%= student.name %>'s Number of Professors: <%= student.count %></br></br>
 
       <%= student.name %>'s courses:</br>

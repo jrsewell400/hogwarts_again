@@ -37,7 +37,7 @@ RSpec.describe Student, type: :model do
   end
 
   describe "class methods" do 
-    it ".sort" do 
+    it ".sort_students" do 
       snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
       hagarid = Professor.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
       lupin = Professor.create(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
@@ -53,7 +53,7 @@ RSpec.describe Student, type: :model do
       ProfessorStudent.create!(student: longbottom, professor: lupin)
       ProfessorStudent.create!(student: longbottom, professor: snape)
 
-      Student.order(name: :asc).all.to_a == [harry, longbottom, malfoy]
+      Student.sort_students.to_a == [malfoy, harry, longbottom]
     end
   end
 end

@@ -7,4 +7,8 @@ class Professor <ApplicationRecord
   def average_age
     students.average(:age)
   end
+
+  def self.sort_professors
+    order('name ASC')
+  end
 end

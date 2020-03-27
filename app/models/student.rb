@@ -8,7 +8,7 @@ class Student <ApplicationRecord
     professors.count
   end
 
-  def self.sort
-    order(name: :asc)
+  def self.sort_students
+    order('name ASC')
   end
 end

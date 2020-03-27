@@ -56,10 +56,10 @@ RSpec.describe "As a visitor,", type: :feature do
       ProfessorStudent.create!(student: longbottom, professor: snape)
 
       visit "/students"
-
-      expect(page.all('.students')[0]).to have_content(malfoy.name)
-      expect(page.all('.students')[1]).to have_content(harry.name)
-      expect(page.all('.students')[2]).to have_content(longbottom.name)
+      
+      expect(page.all('.individual-student')[0]).to have_content(malfoy.name)
+      expect(page.all('.individual-student')[1]).to have_content(harry.name)
+      expect(page.all('.individual-student')[2]).to have_content(longbottom.name)
     end 
   end 
 end 
