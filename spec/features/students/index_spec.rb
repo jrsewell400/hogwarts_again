@@ -1,20 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe Student, type: :model do
-
-  describe 'validations' do
-    it {should validate_presence_of :name}
-    it {should validate_presence_of :age}
-    it {should validate_presence_of :house}
-  end
-
-  describe 'relationships' do
-    it {should have_many :professor_students}
-    it {should have_many(:professors).through(:professor_students)}
-  end
-
-  describe 'instance methods' do
-    it '#count' do
+RSpec.describe "As a visitor,", type: :feature do 
+  describe "when I visit '/students" do 
+    it "then I see a list of courses and the number of professors each student has." do 
       snape = Professor.create(name: "Severus Snape", age: 45, specialty: "Potions")
       hagarid = Professor.create(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
       lupin = Professor.create(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
@@ -30,9 +18,25 @@ RSpec.describe Student, type: :model do
       ProfessorStudent.create!(student: malfoy, professor: lupin)
       ProfessorStudent.create!(student: longbottom, professor: snape)
 
-      expect(harry.count).to eq(3)
-      expect(malfoy.count).to eq(2)
-      expect(longbottom.count).to eq(1)
-    end
-  end
-end
+      visit "/students"
+
+      within "#student-#{harry.id}" do 
+        expect(page).to have_content(snape.name)
+        expect(page).to have_content(snape.age)
+        expect(page).to have_content(snape.specialty)
+      end
+
+      within "#student-#{malfoy.id}" do 
+        expect(page).to have_content(hagarid.name)
+        expect(page).to have_content(hagarid.age)
+        expect(page).to have_content(hagarid.specialty)
+      end
+
+      within "#student-#{longbottom.id}" do 
+        expect(page).to have_content(lupin.name)
+        expect(page).to have_content(lupin.age)
+        expect(page).to have_content(lupin.specialty)
+      end
+    end 
+  end 
+end 

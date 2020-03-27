@@ -1,8 +1,8 @@
 require 'rails_helper'
 
 RSpec.describe "As a visitor,", type: :feature do 
-  describe "when I visit the Professors Index page /professors" do 
-    it "then I see a list of each professor's name, age, and specialty." do 
+  describe "when I visit the Professors Show page /professors/:id" do 
+    it "then I see a list of the names of the students the professors have." do 
       snape = Professor.create!(name: "Severus Snape", age: 45, specialty: "Potions")
       hagarid = Professor.create!(name: "Rubus Hagarid", age: 38 , specialty: "Care of Magical Creatures")
       lupin = Professor.create!(name: "Remus Lupin", age: 49 , specialty: "Defense Against The Dark Arts")
